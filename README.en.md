@@ -41,6 +41,12 @@ You can also ask to “use Fleet” or “coordinate a team of agents.” In env
 
 The bundled skill instructions are currently written in Chinese. This README provides an English introduction and usage guide; it is not a separate English translation of the skill itself.
 
+## End-of-task usage report
+
+Fleet reports which model handled each subtask, its reasoning effort, the outcome, and available input, output, and total token counts, with a summary by model. The inventory includes failed runs, rework, and nested delegation. Lead-agent overhead is shown separately to avoid double-counting parent and child usage.
+
+Exact counts depend on attributable usage records from the host. Missing values are marked as unavailable, with a known-usage subtotal and coverage count rather than a misleading complete total. Quota percentages, budgets, and model estimates are not actual usage. A snapshot cannot include tokens for the final response that has not yet been generated.
+
 ## Contents
 
 ```text
