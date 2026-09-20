@@ -1,4 +1,4 @@
 interface:
   display_name: "Fleet · 星河舰队"
-  short_description: "有界多Agent调度：按任务选择模型与上下文，明确写权并汇合验收"
-  default_prompt: "使用 $fleet 判断这项任务的委派价值，按当前宿主能力选择模型、推理强度与输入，保留整体责任并验证最终结果。"
+  short_description: "只在有净收益时分工，稀疏主循环按能力选型并汇合验收"
+  default_prompt: "使用 $fleet 先判断直接执行或委派哪个更合算；只交出可闭环的完整工作单元，按当前宿主能力选择模型、推理强度与上下文，保留整体责任并验证最终结果。"
